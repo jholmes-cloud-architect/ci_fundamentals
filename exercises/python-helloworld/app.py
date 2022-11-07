@@ -35,16 +35,6 @@ def hello():
 
     return "Hello World!"
 
-@app.route('/status')
-def status():
-    response = app.response_class(
-        response=json.dumps({"result":"OK - healthy"}),
-        status=200,
-        mimetype='application/json'
-    )
-    app.logger.info('Status request successful')
-    return response
-
 if __name__ == "__main__":
 
     ## stream logs to app.log file
