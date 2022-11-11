@@ -10,8 +10,8 @@ ADD . .
 # import dependencies using `go mod init` and build the application using `go build -o helloworld` command, where `-o helloworld` will create the binary of the application with the name `helloworld`
 RUN go mod init && go build -o helloworld
 
-# expose the port 6111
-EXPOSE 6111
+# expose the port 6112
+EXPOSE 6112
 
 # start the container by invoking the binary created earlier, which is  `./helloworld`
 CMD ["./helloworld"]
